@@ -1,194 +1,262 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projekt Parki</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="index.js"></script>
-</head>
-
-<body>
-  <div id="bar">
-    <ul class="main-nav" id="navbar">
-      <li><a class="logo scroll" href="#bgimg-1">Parki Łodzi<br><span>Projekt płuca Polskich miast</span></a></li>
-      <li><a class="scroll" href="#bgimg-1">Home</a></li>
-      <li><a class="scroll" href="#gallery-section">Zdjęcia</a></li>
-      <li><a class="scroll" href="#contact">Kontakt</a></li>
-      <li><a class="special scroll" href="#">Zapisz się</a></li>
-    </ul>
-  </div>
-
-  <div class="topnav">
-    <a class="active scroll" href="#bgimg-1">Parki Łodzi</a>
-    <div id="myLinks">
-      <a class="scroll" href="#bgimg-1">Home</a>
-      <a class="scroll" href="#gallery-section">Galeria</a>
-      <a class="scroll" href="#contact">Kontakt</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <div id="bgimg-1">
-    <div class="opacity">
-      <div class="caption">
-        <span class="border"><a>Zielone Parki Łodzi</a><br><br></span>
-        <hr>
-        <h1> Bliżej natury każdego dnia </h1>
-        <button class="banner-btn">Więcej o Nas</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="content">
-
-    <div class="slideshow-container">
-
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <p class="italic">Przystosuj się do rytmu natury;<br> jej sekretem jest cierpliwość.<br></p>
-        <p>~Colleen Hoover~</p>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <p class="italic">Przyjrzyj się głębiej naturze a wtedy<br> wszystko zrozumiesz lepiej.<br></p>
-        <p>~Albert Einstein~</p>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <p class="italic">Udałem się na spacer przez las<br> i wyszedłem wyższy niż drzewa.<br></p>
-        <p>~Henry David Thoreau~</p>
-      </div>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </div>
-
-  <div id="gallery-section">
-    <div class="gall-section-one">
-      <h2>Łódzkie Parki</h2>
-      <p>Wyróżnione zdjęcia lorem ipsum dolor sit amet. <br><br>Pellentesque arcu leo, viverra a maximus nec, luctus ut
-        tortor. Nam suscipit sed tortor at scelerisque. Sed tempor arcu ut risus pellentesque, a venenatis dui iaculis
-      </p>
-      <button class="gallery-btn">GALERIA</button>
+  <body>
+    <div id="bar">
+      <ul class="main-nav" id="navbar">
+        <li>
+          <a class="logo scroll" href="#bgimg-1"
+            >Parki Łodzi<br /><span>Projekt płuca Polskich miast</span></a
+          >
+        </li>
+        <li><a class="scroll" href="#bgimg-1">Home</a></li>
+        <li><a class="scroll" href="#gallery-section">Zdjęcia</a></li>
+        <li><a class="scroll" href="#contact">Kontakt</a></li>
+        <li><a class="special scroll" href="#">Zapisz się</a></li>
+      </ul>
     </div>
 
-    <div>
-      <div class="portfolio">
-        <div class="portfolio-item zero">
-          <p><span>Autor</span><br> Luis Dalvan<p>
-        </div>
-        <div class="portfolio-item one">
-          <p><span>Autor</span><br> John Doe</p>
-        </div>
-        <div class="portfolio-item two">
-          <p><span>Autor</span><br> Jane Doe</p>
-        </div>
-        <div class="portfolio-item three">
-          <p><span>Autor</span><br> Jane Doe</p>
-        </div>
-        <div class="portfolio-item four">
-          <p><span>Autor</span><br> Tirachard Kumtanom</p>
-        </div>
-        <div class="portfolio-item five"></div>
-        <div class="portfolio-item six" id="flip">WIĘCEJ ZDJĘĆ</div>
-        <div class="portfolio-item seven"></div>
+    <div class="topnav">
+      <a class="active scroll" href="#bgimg-1">Parki Łodzi</a>
+      <div id="myLinks">
+        <a class="scroll" href="#bgimg-1">Home</a>
+        <a class="scroll" href="#gallery-section">Galeria</a>
+        <a class="scroll" href="#contact">Kontakt</a>
       </div>
-      <div id="panel">
-        <div class="grid-set">
-          <div class="portfolio-item eight">
-            <p><span>Autor</span><br> Jane Doe</p>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div id="bgimg-1">
+      <div class="opacity">
+        <div class="caption">
+          <span class="border"><a>Zielone Parki Łodzi</a><br /><br /></span>
+          <hr />
+          <h1>Bliżej natury każdego dnia</h1>
+          <button class="banner-btn">Więcej o Nas</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <p class="italic">
+            Przystosuj się do rytmu natury;<br />
+            jej sekretem jest cierpliwość.<br />
+          </p>
+          <p>~Colleen Hoover~</p>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <p class="italic">
+            Przyjrzyj się głębiej naturze a wtedy<br />
+            wszystko zrozumiesz lepiej.<br />
+          </p>
+          <p>~Albert Einstein~</p>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <p class="italic">
+            Udałem się na spacer przez las<br />
+            i wyszedłem wyższy niż drzewa.<br />
+          </p>
+          <p>~Henry David Thoreau~</p>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <div id="gallery-section">
+      <div class="gall-section-one">
+        <h2>Łódzkie Parki</h2>
+        <p>
+          Wyróżnione zdjęcia lorem ipsum dolor sit amet.
+          <br /><br />Pellentesque arcu leo, viverra a maximus nec, luctus ut
+          tortor. Nam suscipit sed tortor at scelerisque. Sed tempor arcu ut
+          risus pellentesque, a venenatis dui iaculis
+        </p>
+        <button class="gallery-btn">GALERIA</button>
+      </div>
+
+      <div>
+        <div class="portfolio">
+          <div class="portfolio-item zero">
+            <p>
+              <span>Autor</span><br />
+              Luis Dalvan
+            </p>
+            <p></p>
           </div>
-          <div class="portfolio-item nine">
-            <p><span>Autor</span><br> Mihis Alex</p>
+
+          <div class="portfolio-item one">
+            <p>
+              <span>Autor</span><br />
+              John Doe
+            </p>
           </div>
-          <div class="portfolio-item ten">
-            <p><span>Autor</span><br> Jane Doe</p>
+          <div class="portfolio-item two">
+            <p>
+              <span>Autor</span><br />
+              Jane Doe
+            </p>
           </div>
-          <div class="portfolio-item eleven">
-            <p><span>Autor</span><br> John Doe</p>
+          <div class="portfolio-item three">
+            <p>
+              <span>Autor</span><br />
+              Jane Doe
+            </p>
+          </div>
+          <div class="portfolio-item four">
+            <p>
+              <span>Autor</span><br />
+              Tirachard Kumtanom
+            </p>
+          </div>
+          <div class="portfolio-item five"></div>
+          <div class="portfolio-item six" id="flip">WIĘCEJ ZDJĘĆ</div>
+          <div class="portfolio-item seven"></div>
+        </div>
+        <div id="panel">
+          <div class="grid-set">
+            <div class="portfolio-item eight">
+              <p>
+                <span>Autor</span><br />
+                Jane Doe
+              </p>
+            </div>
+            <div class="portfolio-item nine">
+              <p>
+                <span>Autor</span><br />
+                Mihis Alex
+              </p>
+            </div>
+            <div class="portfolio-item ten">
+              <p>
+                <span>Autor</span><br />
+                Jane Doe
+              </p>
+            </div>
+            <div class="portfolio-item eleven">
+              <p>
+                <span>Autor</span><br />
+                John Doe
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="bgimg-2">
-    <div class="opacity">
-      <div class="caption">
-        <h2>Dołącz do nas
-          <br><br> Dzisiejsze wybory kształtują jutro</h2>
+    <div class="bgimg-2">
+      <div class="opacity">
+        <div class="caption">
+          <h2>
+            Dołącz do nas <br /><br />
+            Dzisiejsze wybory kształtują jutro
+          </h2>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container2">
-    <div class="content2">
-      <div class="avatar1"><img src="user2.jpg" alt="user">
-        <p>Jej imię<br> x lat</p>
-      </div>
-      <div class="avatar2"><img src="user1.jpg" alt="user">
-        <p>Jego imię<br> x lat</p>
-      </div>
-      <div class="avatar3"><img src="user3.jpg" alt="user2">
-        <p>Jej imię<br> x lat</p>
-      </div>
-      <h4>Oni biorą już udział w naszym wspólnym projekcie</h4>
-      <button class="subscribe">ZAPISZ SIĘ</button>
-    </div>
-  </div>
-
-  <div id="bgimg">
-    <div class="opacity">
-      <div id="contact">
-        <h4>Masz jakieś pytania? Napisz do nas:</h4>
-        <form name="contact" method="POST" data-netlify="true">
-          <label for="name"> Imię:</label>
-          <input type="text" id="name" name="name" placeholder="Imię...">
-
-          <label for="mail">Adres mailowy:</label>
-          <input type="text" id="email" name="email" placeholder="Email...">
-          <label>Treść:</label>
-          <textarea placeholder="Treść wiadomości..."></textarea>
-
-          <input type="submit" value="Wyślij">
-        </form>
+    <div class="container2">
+      <div class="content2">
+        <div class="avatar1">
+          <img src="user2.jpg" alt="user" />
+          <p>
+            Jej imię<br />
+            x lat
+          </p>
+        </div>
+        <div class="avatar2">
+          <img src="user1.jpg" alt="user" />
+          <p>
+            Jego imię<br />
+            x lat
+          </p>
+        </div>
+        <div class="avatar3">
+          <img src="user3.jpg" alt="user2" />
+          <p>
+            Jej imię<br />
+            x lat
+          </p>
+        </div>
+        <h4>Oni biorą już udział w naszym wspólnym projekcie</h4>
+        <button class="subscribe">ZAPISZ SIĘ</button>
       </div>
     </div>
-  </div>
 
+    <div id="bgimg">
+      <div class="opacity">
+        <div id="contact">
+          <h4>Masz jakieś pytania? Napisz do nas:</h4>
+          <form name="contact" method="POST" data-netlify="true">
+            <label for="name"> Imię:</label>
+            <input type="text" id="name" name="name" placeholder="Imię..." />
 
-  <footer>
+            <label for="email">Adres mailowy:</label>
+            <input type="text" id="email" name="email" placeholder="Email..." />
+            <label
+              >Treść:
+              <textarea
+                name="treść"
+                placeholder="Treść wiadomości..."
+                required
+              ></textarea>
+            </label>
 
-    <div class="contact-data">
-      <a><span>Kontakt:</span> <br>Łódź, Polska <br> m.noga@email.com </a>
+            <input type="submit" value="Wyślij" />
+          </form>
+        </div>
+      </div>
     </div>
 
-    <div class="contact-data2">
-      <a>Copyright © 2019 Michał Noga</a>
-    </div>
+    <footer>
+      <div class="contact-data">
+        <a
+          ><span>Kontakt:</span> <br />Łódź, Polska <br />
+          m.noga@email.com
+        </a>
+      </div>
 
-    <div class="contact-data3">
-      <a><span>Media:</span><br> Linked<i class="fab fa-linkedin"></i> <br><i
-          class="fab fa-facebook-square"></i>acebook</a>
-    </div>
+      <div class="contact-data2">
+        <a>Copyright © 2019 Michał Noga</a>
+      </div>
 
-  </footer>
-
-</body>
-
+      <div class="contact-data3">
+        <a
+          ><span>Media:</span><br />
+          Linked<i class="fab fa-linkedin"></i> <br /><i
+            class="fab fa-facebook-square"
+          ></i
+          >acebook</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
